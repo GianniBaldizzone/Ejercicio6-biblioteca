@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Persona gianni = new Persona("Gianni",
+                "Baldizzone",
+                "44891361",
+                19
+                );
+
+
     }
 }
