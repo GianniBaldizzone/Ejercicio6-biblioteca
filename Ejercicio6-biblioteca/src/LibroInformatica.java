@@ -1,20 +1,10 @@
 public class LibroInformatica extends Libro{
-    private String tipoDeLibro;
-
-    public String getTipoDeLibro() {
-        return tipoDeLibro;
+    public LibroInformatica(String nombre, int cantidadDeCapitulos) {
+        super(nombre, cantidadDeCapitulos);
     }
 
-    public void setTipoDeLibro(String tipoDeLibro) {
-        this.tipoDeLibro = tipoDeLibro;
-    }
-
-    public LibroInformatica(String nombre, int tiempoDePrestamoEnSemanas, int cantidadDeCapitulos, String tipoDeLibro) {
-        super(nombre, tiempoDePrestamoEnSemanas, cantidadDeCapitulos);
-        this.tipoDeLibro = "informatica";
-    }
     @Override
-    public void fijarTiempoDePrestamoEnSemanas(Libro libro) {
+    public void fijarTiempoDePrestamoEnSemanas() {
         setTiempoDePrestamoEnSemanas(2);
     }
 }

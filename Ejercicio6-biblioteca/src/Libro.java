@@ -3,11 +3,16 @@ public class Libro {
     private int tiempoDePrestamoEnSemanas;
     private int cantidadDeCapitulos;
 
-    public Libro(String nombre, int tiempoDePrestamoEnSemanas, int cantidadDeCapitulos) {
+
+
+    public Libro(String nombre, int cantidadDeCapitulos) {
         this.nombre = nombre;
         this.tiempoDePrestamoEnSemanas = tiempoDePrestamoEnSemanas;
         this.cantidadDeCapitulos = cantidadDeCapitulos;
+
     }
+
+
 
     public String getNombre() {
         return nombre;
@@ -32,8 +37,10 @@ public class Libro {
     public void setCantidadDeCapitulos(int cantidadDeCapitulos) {
         this.cantidadDeCapitulos = cantidadDeCapitulos;
     }
-    public void fijarTiempoDePrestamoEnSemanas(Libro libro){
-
+    public void fijarTiempoDePrestamoEnSemanas(){
+    }
+    public void mostrarTiempoDePrestamoEnSemanas(){
+        System.out.println(this.getTiempoDePrestamoEnSemanas());
     }
 
 }

@@ -1,16 +1,10 @@
 public class LibroFilosofia extends Libro{
-    private String tipoDeLibro;
-    public LibroFilosofia(String nombre, int tiempoDePrestamoEnSemanas, int cantidadDeCapitulos, String tipoDeLibro) {
-        super(nombre, tiempoDePrestamoEnSemanas, cantidadDeCapitulos);
-        this.tipoDeLibro = "filosofia";
+    public LibroFilosofia(String nombre, int cantidadDeCapitulos) {
+        super(nombre, cantidadDeCapitulos);
     }
 
-    public String getTipoDeLibro() {
-        return tipoDeLibro;
+    @Override
+    public void fijarTiempoDePrestamoEnSemanas() {
+        setTiempoDePrestamoEnSemanas(2);
     }
-
-    public void setTipoDeLibro(String tipoDeLibro) {
-        this.tipoDeLibro = tipoDeLibro;
-    }
-
 }

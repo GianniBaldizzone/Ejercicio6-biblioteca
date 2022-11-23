@@ -1,26 +1,18 @@
 public class LibroMatematica extends Libro {
-    private String tipoDeLibro;
 
-    public String getTipoDeLibro() {
-        return tipoDeLibro;
-    }
 
-    public LibroMatematica(String nombre, int tiempoDePrestamoEnSemanas, int cantidadDeCapitulos, String tipoDeLibro) {
-        super(nombre, tiempoDePrestamoEnSemanas=0, cantidadDeCapitulos);
-        this.tipoDeLibro = "matematica";
-    }
-
-    public void setTipoDeLibro(String tipoDeLibro) {
-        this.tipoDeLibro = tipoDeLibro;
+    public LibroMatematica(String nombre, int cantidadDeCapitulos) {
+        super(nombre, cantidadDeCapitulos);
     }
 
     @Override
-    public void fijarTiempoDePrestamoEnSemanas(Libro libro) {
+    public void fijarTiempoDePrestamoEnSemanas() {
       if (getCantidadDeCapitulos()==1){
           setTiempoDePrestamoEnSemanas(1);
       }else{
-          setTiempoDePrestamoEnSemanas(2);
+          setTiempoDePrestamoEnSemanas(3);
       }
 
     }
+
 }
